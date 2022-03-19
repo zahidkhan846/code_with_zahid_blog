@@ -3,8 +3,8 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def landing_page():
-    pass
+def landing_page(req):
+    return render(req, 'blog/index.html')
 
 
 def posts_page():
